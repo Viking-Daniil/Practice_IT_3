@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Гринатом</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main id="main">
+        <div class="menu">
+            <div @click="swap1" class=menu-item>Главная</div>
+            <div @click="swap2" class=menu-item>Справка</div>
+            <div @click="swap3" class=menu-item>Авторизация</div>
+			      <div @click="swap4" class=menu-item>Корзина</div>
+        </div>
+        <div class="content">
+            <div style="font-size: 2em;">
+			      <div v-if="Main"> Это главная страница </div>
+            <div v-if="Help">Это страница справки</div>
+            <div v-if="Login">Это страница авторизации</div>
+			      <div v-if="Cart"> Это страница корзины </div>
+			</div>
+		</div>
+    <script src="vue.js"></script>
+</body>
+</html>

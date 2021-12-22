@@ -1,0 +1,15 @@
+.menu{
+    display: flex;
+	color: #2a2f36;
+	font-size: 24px;
+	font-weight: 300;
+	padding: 0px 15px;
+}
+.menu-item{
+  margin:10px;
+   border: 4px double black;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 5px 10px;
+
+}
